@@ -1,0 +1,4 @@
+#grid-gallerie{
+  display: grid;
+  grid-column: repeat(1fr*6);
+}

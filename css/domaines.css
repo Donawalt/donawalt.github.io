@@ -1,0 +1,218 @@
+@keyframes slide_fond {
+    0% {
+        background-position-y: 1200px;
+    }
+    25% {
+        /*background-position: 1200px;*/
+    }
+    50% {
+        /*background-position-y: 1200px;*/
+    }
+    75% {
+        /*background-position: 1200px;*/
+    }
+    100% {
+        background-position-y: center;
+    }
+}
+
+@keyframes slide_fond1 {
+    0% {
+        background-position-x: center;
+    }
+
+    25% {
+        /*background-position: 1200px;*/
+    }
+    50% {
+        /*background-position-y: 1200px;*/
+    }
+    75% {
+        /*background-position: 1200px;*/
+    }
+    100% {
+        background-position-x: 1200px;
+    }
+}
+
+#logo_burger,
+#logo_Donael > .a {
+    color: black;
+    fill: black;
+}
+
+main > section {
+    display: flex;
+    height: 50vh;
+    align-content: center;
+}
+main{
+    margin-bottom: 25vh;
+}
+main > section > div > div > h3 {
+    position: absolute;
+    z-index: 3;
+    width: 40vw;
+    text-align: right;
+    margin-left: 8vw;
+    font-size: 5vw;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    background: -moz-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(222, 0, 0, 1)), color-stop(100%, rgba(99, 0, 0, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(75deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DE0000', endColorstr='#630000', GradientType=1);
+    /* ie6-9 */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    background-repeat: no-repeat;
+}
+
+main > section:hover > div > div > h3 {
+    background-position-x: 1200px;
+    animation: slide_fond1 3s;
+}
+
+main > section > div {
+    height: 50vh;
+    width: 50vw;
+}
+
+main > section > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section > div > div {
+    width: 40vw;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    filter: blur();
+    border: dashed grey 0.2vw;
+    background-position-y: 1200px;
+
+}
+
+main > section:hover > div > div {
+    animation: slide_fond 3s;
+    background-position-y: center;
+}
+
+main > section > div:nth-child(2) {
+    font-family: 'Lato', sans-serif;
+    padding-left: 5vw;
+    min-height: 25vh;
+}
+
+main > section > div:nth-child(2) a {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    background: -moz-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(222, 0, 0, 1)), color-stop(100%, rgba(99, 0, 0, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(75deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DE0000', endColorstr='#630000', GradientType=1);
+    /* ie6-9 */
+    position: absolute;
+    padding: 1vw;
+    border-radius: 10px;
+    margin-left: 34vw;
+}
+
+main > section > div:nth-child(2) > p {
+    font-size: 1.5vw;
+}
+
+@media (orientation:portrait){
+  main>section{
+    position: relative;
+  }
+  main>section>div{
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+  }
+
+  main>section>div>div{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    background-position: center;
+  }
+  main>section:hover>div>div{
+    animation: 0s;
+  }
+
+  main>section>div>div>h3{
+    text-align: center;
+    margin: auto;
+    font-size: 8vw;
+    animation: 0s;
+    -webkit-background-clip:content-box;
+    -moz-background-clip:content-box;
+    -o-background-clip:content-box;
+    background-clip:content-box;
+    -webkit-text-fill-color: White;
+    background-position-x: center;
+    animation: 0s;
+  }
+  main > section:hover>div>div:nth-child(1)>h3{
+    filter: grayscale(100%);
+  }
+  main > section:hover > div > div > h3 {
+      -webkit-background-clip:content-box;
+      -moz-background-clip:content-box;
+      -o-background-clip:content-box;
+      background-clip:content-box;
+      -webkit-text-fill-color: White;
+      background-position-x: center;
+      animation: 0s;
+  }
+  main>section>div:nth-child(2){
+    width:100%;
+    z-index: 3;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items:flex-end;
+  }
+  main>section>div:nth-child(2){
+    bottom: 2.5vh;
+  }
+  main > section > div:nth-child(2) > p {
+      display: none;
+      font-size: 4vw;
+  }
+}

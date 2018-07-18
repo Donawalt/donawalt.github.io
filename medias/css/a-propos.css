@@ -1,0 +1,158 @@
+
+header {
+    background: -moz-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(222, 0, 0, 1)), color-stop(100%, rgba(99, 0, 0, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(15deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(75deg, rgba(222, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DE0000', endColorstr='#630000', GradientType=1);
+    /* ie6-9 */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	position: relative;
+}
+
+header > nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > p {
+    margin-top: 0vh;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-size: 2em;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fade-in 1.6s ease-in 0.3s both;
+    animation: fade-in 1.6s ease-in 0.3s both;
+    font-size: 2vw;
+}
+
+header>div {
+    display: flex;
+    margin-left: 4vw;
+    margin-right: 5vw;
+    color: white;
+    justify-content: space-between;
+    bottom: 0;
+	position: absolute;
+	width: 90%;
+}
+
+header div a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-left: 1vw;
+}
+section>a{
+    color:Black;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3vh;
+    height: auto;
+}
+
+section>a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    height: 75%;
+    display: flex;
+}
+
+section>div{
+    width:50%;
+}
+section>div>p {
+    text-align: justify;
+    color:white;
+    padding: 20px;
+    width:100%;
+    margin: auto;
+    font-size: 1.25em;
+    font-family: 'lato', sans-serif;
+}
+
+main>div {
+    margin-bottom: 20px;
+}
+
+h1{
+    font-family: 'Roboto Mono';
+    color: white;
+}
+
+form {
+    padding: 6vw;
+    padding-top: 0vw;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+form>input,form>textarea {
+    margin: 1vw;
+    height: 2em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-family: 'lato', sans-serif;
+}
+
+form>h3{
+    color: white;
+    font-family: 'lato', sans-serif;
+}
+form>textarea {
+    height:8em;
+}
+section div>p span{
+  color: #009cff;
+}
+input:hover,textarea:hover{
+    border: cyan 2px solid ;
+}
+
+section>div>div {
+  background-position: center;
+  background-size: cover;
+  height:10vw;
+  width:10vw;
+  margin: auto;
+  border-radius: 1000px;
+}
+@media (orientation:portrait) {
+	section{
+		flex-direction: column;
+		text-align: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	section>div, section>form {
+		width:90vw;
+	}
+}

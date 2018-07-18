@@ -1,0 +1,126 @@
+html,body,main,section {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+        scroll-behavior: smooth;
+}
+
+@-webkit-keyframes hide {
+    0% {
+      top:center;
+      display: block;
+    }
+    100% {
+        left:-100vw;
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+      left:100vw;
+    }
+    100% {
+      top:center;
+      display: block;
+    }
+}
+main>a,main>a:focus {
+    color:white;
+    margin:2vh;
+    text-align: center;
+    padding: 2vh;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-radius: 2vw;
+    transition: all 1s ;
+}
+
+main>a:hover{
+    box-shadow: 1px 0px 1111px blue;
+    border: white 1px solid;
+    border-radius: 4vw;
+    color: black;
+    background-color: white;
+    text-decoration:overline;
+    text-align: center;
+}
+
+#page_t{
+
+position : fixed;
+z-index: 10000;
+background-color: black;
+top : 0px;
+left: 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.hide {
+
+  animation: hide 1s linear 3ms;
+  animation-fill-mode: forwards;
+}
+.show {
+  animation: show 900ms linear 3ms;
+  animation-fill-mode: forwards;
+}
+
+body{
+     background : -moz-linear-gradient(-24.79deg, rgba(99, 84, 98, 1) 0%, rgba(7, 7, 8, 1) 100%);
+  background : -webkit-linear-gradient(-24.79deg, rgba(99, 84, 98, 1) 0%, rgba(7, 7, 8, 1) 100%);
+  background : -webkit-gradient(linear,16.37% 22.39% ,88.1% 81.28% ,color-stop(0,rgba(147, 39, 143, 1) ),color-stop(1,rgba(27, 20, 100, 1) ));
+  background : -o-linear-gradient(-24.79deg, rgba(99, 84, 98, 1) 0%, rgba(7, 7, 8, 1) 100%);
+  background : -ms-linear-gradient(-24.79deg, rgba(99, 84, 98, 1) 0%, rgba(7, 7, 8, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#93278F', endColorstr='#1B1464' ,GradientType=0)";
+  background : linear-gradient(-24.79deg, rgba(99, 84, 98, 1) 0%, rgba(7, 7, 8, 1) 100%);
+  border-width : 1px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93278F',endColorstr='#1B1464' , GradientType=1);
+    height: 100vh;
+}
+main {
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;+
+}
+
+body>nav{
+   height:10vh;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+}
+body>nav>a{
+    text-align: center;
+}
+
+#logo_Donael {
+    width: 11vw;
+    margin-left: 5vw;
+}
+
+#logo_croix {
+    color: white;
+    margin-right: 5vw;
+    height: 20;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+@media (orientation:portrait){
+  #logo_Donael {
+      width: 22vw;
+      margin-left: 5vw;
+  }
+  #logo_croix {
+    font-size: 4.5vw;
+  }
+}

@@ -1,0 +1,54 @@
+# Powered by Infinityfree.net
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault A0
+	ExpiresByType image/gif A691200
+	ExpiresByType image/png A691200
+	ExpiresByType image/jpeg A691200
+	ExpiresByType text/css A691200
+	ExpiresByType text/javascript A691200
+	ExpiresByType application/javascript A691200
+</IfModule>
+
+ErrorDocument 400 http://donaelwalter.com/erreur.php?erreur=400
+
+ErrorDocument 401 http://donaelwalter.com/erreur.php?erreur=401
+
+ErrorDocument 402 http://donaelwalter.com/erreur.php?erreur=402
+
+ErrorDocument 403 http://donaelwalter.com/erreur.php?erreur=403
+
+ErrorDocument 404 http://donaelwalter.com/erreur.php?erreur=404
+
+ErrorDocument 405 http://donaelwalter.com/erreur.php?erreur=405
+
+ErrorDocument 500 http://donaelwalter.com/erreur.php?erreur=500
+
+ErrorDocument 501 http://donaelwalter.com/erreur.php?erreur=501
+
+ErrorDocument 502 http://donaelwalter.com/erreur.php??erreur=502
+
+ErrorDocument 503 http://donaelwalter.com/erreur.php?erreur=503
+
+ErrorDocument 504 http://donaelwalter.com/erreur.php?erreur=504
+
+ErrorDocument 505 http://donaelwalter.com/erreur.php?erreur=505
+RewriteEngine On
+RewriteBase /
+
+#### PERSISTENT CONTENT ####
+
+
+
+#### PERSISTENT CONTENT END ####
+
+DirectoryIndex index.php index.cgi index.html
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_URI} \/(js\/main\.js|css\/(\d+|common|site)\.css)$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ sitepro/$1 [L,QSA]
+
+
+#### PERSISTENT CONTENT ####
+
